@@ -16,7 +16,7 @@ public class MenuPrintUtils {
             "Show the client's names whose invoices' invoice amount is less than the given invoice amount.",
             "List the invoices that have a bigger invoice amount than the specified invoice amount.",
             "Calculate the average invoice amount of the invoices that have a bigger invoice amount than the specified invoice amount.",
-            "Print company names and sectors whose average total invoice in a specified month is less than the specified amount.",
+            "List the name and sector of companies whose average invoice amount for the specified month is less than the specified amount.",
             "Choose a client to login.",
             "Add a new client.",
             "Close the program."

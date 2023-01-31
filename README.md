@@ -1,2 +1,54 @@
-# Homework2_OrderApplication
-Definex Java Spring Practicum second homework
+# Definex Java Spring Practicum Second Homework - Order Application
+### Requirements
+- List all the clients.
+- List all the invoices.
+- List client names whose name has a "C" letter in them.
+- Create a system to add new clients.
+- List invoices that have a total amount of more than 1500.
+- Show the average value of the invoices that have a total amount of more than 1500.
+- List the names of customers with invoices amount under 500 in the system.
+- List the name and industry of companies with an average invoice amount of less than 750 in June.
+- List the invoices of the clients with the registration month in June.
+### Maven Command Screenshots
+- **Maven Clean**
+![](src/images/mavenClean.png)
+---
+- **Maven Install**
+![](src/images/mavenInstall.png)
+---
+- **Maven Build**
+![](src/images/mavenCompile.png)
+---
+### Output:
+- **Database data**
+![](src/images/exampleData.png)
+- **Main Menu**
+![](src/images/mainMenu.png)
+- **List all the clients.**
+![](src/images/listAllClients.png)
+- **List all the invoices.**
+![](src/images/listAllInvoices.png)
+- **List client names whose name has a "C" letter in them.**
+![](src/images/searchByLetter.png)
+- **List invoices that have a total amount of more than 1500.**
+![](src/images/moreThanAmount.png)
+- **Show the average value of the invoices that have a total amount of more than 1500.**
+![](src/images/moreThanAmountAverage.png)
+- **List the names of customers with invoices amount under 500 in the system.**
+![](src/images/lessThenAmountClientName.png)
+- **List the name and industry of companies with an average invoice amount of less than 750 in June.**
+![](src/images/monthAverageLessThanCompanySector.png)
+- **List the invoices of the clients with the registration month in June.**
+![](src/images/searchByMonth.png)
+---
+- **Add new client.**
+![](src/images/addNewClient_1.png)
+- **List all the client.**
+![](src/images/addNewClient_2.png)
+- **Order some items for the new client.**
+![](src/images/addNewClient_3.png)
+- **Another order for the new client.**
+![](src/images/addNewClient_4.png)
+- **List all the invoices after the purchases.**
+![](src/images/addNewClient_5.png)
+

@@ -38,7 +38,7 @@ public class DebugUtils {
     }
 
     public static void addExampleDatas(ClientService clientService, ItemService itemService, InvoiceService invoiceService, CompanyService companyService, ApplicationExampleDatas applicationExampleDatas) {
-        System.out.println("==================ADDING EXAMPLE DATAS==================");
+        System.out.println("==================ADDING EXAMPLE DATA==================");
         //ADD EXAMPLE CLIENTS TO THE CLIENT DB
         for (NewClientDto exampleClient : applicationExampleDatas.getExampleClients()) {
             clientService.addClient(exampleClient);

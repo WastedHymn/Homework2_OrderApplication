@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         //CREATE A SINGLETON OBJECT TO STORE SERVICES, REPOSITORIES, APPLICATION OBJECT, EXAMPLE DATAS OBJECT
         RequiredObjects requiredObjects = RequiredObjects.getInstance();
-        //ADD EXAMPLE DATAS TO THE DATABASE
+        //ADD EXAMPLE DATA TO THE DATABASE
         DebugUtils.addExampleDatas(
                 requiredObjects.getClientService(),
                 requiredObjects.getItemService(),
