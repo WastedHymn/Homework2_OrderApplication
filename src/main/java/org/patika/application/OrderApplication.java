@@ -75,8 +75,7 @@ public class OrderApplication {
                 loggedClient.getCurrentClient().getName(),
                 loggedClient.getCurrentClient().getLastName()
         );
-        int selectedClientOption = MenuInputUtils.getIntegerInput();
-        return selectedClientOption;
+        return MenuInputUtils.getIntegerInput();
     }
 
     public void logOut() {

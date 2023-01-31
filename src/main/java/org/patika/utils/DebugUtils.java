@@ -1,6 +1,6 @@
 package org.patika.utils;
 
-import org.patika.application.ApplicationExampleDatas;
+import org.patika.application.ApplicationExampleData;
 import org.patika.dto.NewCompanyDto;
 import org.patika.dto.NewInvoiceDto;
 import org.patika.dto.NewItemDto;
@@ -22,12 +22,6 @@ public class DebugUtils {
         }
     }
 
-    public static void printInvoiceListInAList(List<List<Invoice>> listInAList) {
-        for (List<Invoice> list : listInAList) {
-            DebugUtils.printListElements(list);
-        }
-    }
-
     public static void printClientInvoiceMap(HashMap<Client, List<Invoice>> map) {
         map.forEach((client, invoices) -> {
             System.out.println(client);
@@ -37,25 +31,25 @@ public class DebugUtils {
         });
     }
 
-    public static void addExampleDatas(ClientService clientService, ItemService itemService, InvoiceService invoiceService, CompanyService companyService, ApplicationExampleDatas applicationExampleDatas) {
+    public static void addExampleData(ClientService clientService, ItemService itemService, InvoiceService invoiceService, CompanyService companyService, ApplicationExampleData applicationExampleData) {
         System.out.println("==================ADDING EXAMPLE DATA==================");
         //ADD EXAMPLE CLIENTS TO THE CLIENT DB
-        for (NewClientDto exampleClient : applicationExampleDatas.getExampleClients()) {
+        for (NewClientDto exampleClient : applicationExampleData.getExampleClients()) {
             clientService.addClient(exampleClient);
         }
         System.out.println("========================================================");
         //ADD EXAMPLE COMPANIES TO THE COMPANY DB
-        for (NewCompanyDto exampleCompany : applicationExampleDatas.getExampleCompanies()) {
+        for (NewCompanyDto exampleCompany : applicationExampleData.getExampleCompanies()) {
             companyService.addCompany(exampleCompany);
         }
         System.out.println("========================================================");
         //ADD EXAMPLE ITEMS  TO THE ITEM DB
-        for (NewItemDto exampleItem : applicationExampleDatas.getExampleItems()) {
+        for (NewItemDto exampleItem : applicationExampleData.getExampleItems()) {
             itemService.addItem(exampleItem);
         }
         System.out.println("========================================================");
         //ADD EXAMPLE INVOICES TO THE INVOICE DB
-        for (NewInvoiceDto exampleNewInvoice : applicationExampleDatas.getExampleInvoices()) {
+        for (NewInvoiceDto exampleNewInvoice : applicationExampleData.getExampleInvoices()) {
             invoiceService.addInvoice(exampleNewInvoice);
         }
     }

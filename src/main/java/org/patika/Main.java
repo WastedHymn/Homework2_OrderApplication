@@ -11,7 +11,7 @@ public class Main {
         //CREATE A SINGLETON OBJECT TO STORE SERVICES, REPOSITORIES, APPLICATION OBJECT, EXAMPLE DATAS OBJECT
         RequiredObjects requiredObjects = RequiredObjects.getInstance();
         //ADD EXAMPLE DATA TO THE DATABASE
-        DebugUtils.addExampleDatas(
+        DebugUtils.addExampleData(
                 requiredObjects.getClientService(),
                 requiredObjects.getItemService(),
                 requiredObjects.getInvoiceService(),

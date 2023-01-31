@@ -39,7 +39,6 @@ public class MenuInputUtils {
 
     public static String getStringInput(){
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
-        return input;
+        return scanner.next();
     }
 }

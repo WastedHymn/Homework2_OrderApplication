@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ApplicationExampleDatas {
+public class ApplicationExampleData {
     List<NewClientDto> exampleClients = new ArrayList<>();
     List<NewItemDto> exampleItems = new ArrayList<>();
     List<NewInvoiceDto> exampleInvoices = new ArrayList<>();
     List<NewCompanyDto> exampleCompanies = new ArrayList<>();
 
-    public ApplicationExampleDatas() {
+    public ApplicationExampleData() {
         addExampleClientSignupDtos();
         addExampleNewItemDtos();
         addExampleNewInvoiceDtos();

@@ -22,7 +22,7 @@ public class RequiredObjects {
     private ClientService clientService;
     private CompanyService companyService;
 
-    private ApplicationExampleDatas applicationExampleDatas;
+    private ApplicationExampleData applicationExampleData;
     private OrderApplication orderApplication;
     private ApplicationQueries applicationQueries;
 
@@ -33,7 +33,7 @@ public class RequiredObjects {
 
     //Initialize objects
     private void initObjects() {
-        applicationExampleDatas = new ApplicationExampleDatas();
+        applicationExampleData = new ApplicationExampleData();
 
         this.clientRepository = new ClientRepository();
         this.invoiceRepository = new InvoiceRepository();
@@ -86,8 +86,8 @@ public class RequiredObjects {
         return companyService;
     }
 
-    public ApplicationExampleDatas getExampleDatas() {
-        return applicationExampleDatas;
+    public ApplicationExampleData getExampleDatas() {
+        return applicationExampleData;
     }
 
     public OrderApplication getOrderApplication() {
